@@ -9,18 +9,11 @@ RUN apk add --update \
   nodejs \
   tzdata \
   postgresql-client
-  #\
-  #&& rm -rf /var/cache/apk/*
 
 RUN apk add --no-cache  bash
 RUN gem install nokogiri
 
-RUN mkdir /myapp
-WORKDIR /myapp
-COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
-RUN bundle install
-COPY . /myapp
+WORKDIR /export/rails/site_1
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
