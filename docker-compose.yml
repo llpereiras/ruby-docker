@@ -7,3 +7,4 @@ services:
       - ./site_1:/export/rails/site_1
     ports:
       - "3000:3000"
+    container_name: site_1
