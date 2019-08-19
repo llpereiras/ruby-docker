@@ -1,24 +1,7 @@
-# README
+# Ruby com Docker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto seguiu este tutorial, ajustando para rodar com alpine
 
-Things you may want to cover:
 
-* Ruby version
+`https://docs.docker.com/compose/rails/`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
