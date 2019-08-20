@@ -10,13 +10,9 @@
 
 `docker-compose up`
 
-### Executar comandos dentro do container
+### Acessar o bash do container que está rodando
 
-`docker-compose run web rake db:create`
-
-Ou
-
-`docker-compose run web rails console`
+`docker exec -it  site_1 /bin/bash`
 
 ### Derrubar aplicação do docker compose
 
