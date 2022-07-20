@@ -31,7 +31,7 @@ jobs:
       env:
         REGISTRY: ghcr.io
         OWNER: llpereiras
-        IMAGE_NAME: rubydocker
+        IMAGE_NAME: ruby-docker
       uses: docker/build-push-action@v2
       with:
         context: .
@@ -39,6 +39,6 @@ jobs:
         target: final
         push: true
         tags: |
-          {$REGISTRY}/{$OWNER}/{$IMAGE_NAME}:latest
+          ghcr.io/llpereiras/ruby-docker:latest
         build-args: |
           ENVIRONMENT=production
