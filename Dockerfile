@@ -4,14 +4,11 @@ FROM ruby:2.5.5-alpine3.10
 
 RUN apk add --update \
   build-base \
-  mariadb-dev \
-  sqlite-dev \
-  nodejs \
   tzdata \
   postgresql-client
 
-RUN apk add --no-cache  bash
-RUN gem install nokogiri
+# RUN apk add --no-cache  bash
+# RUN gem install nokogiri
 
 WORKDIR /export/rails/site_1
 
