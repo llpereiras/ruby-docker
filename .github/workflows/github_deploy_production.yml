@@ -36,7 +36,6 @@ jobs:
       with:
         context: .
         file: ./Dockerfile
-        target: production
         push: true
         tags: |
           ghcr.io/llpereiras/ruby-docker:latest
