@@ -1,7 +1,6 @@
 FROM ruby:2.5.5-alpine3.10
 # ruby:2.5
 # RUN apt-get update -qq && apt-get install -y nodejs
-NAME 'ruby-docker-upload-github'
 
 RUN apk add --update \
   build-base \
