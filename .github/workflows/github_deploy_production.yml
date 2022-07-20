@@ -35,8 +35,8 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: Dockerfile
-        target: final
+        file: ./Dockerfile
+        target: production
         push: true
         tags: |
           ghcr.io/llpereiras/ruby-docker:latest
