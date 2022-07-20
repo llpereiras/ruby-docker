@@ -31,7 +31,7 @@ jobs:
       env:
         REGISTRY: ghcr.io
         OWNER: llpereiras
-        IMAGE_NAME: ${{ github.repository }}
+        IMAGE_NAME: rubydocker
       uses: docker/build-push-action@v2
       with:
         context: .
